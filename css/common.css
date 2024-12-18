@@ -12,3 +12,20 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+.img_task_two {
+  display: block;
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}

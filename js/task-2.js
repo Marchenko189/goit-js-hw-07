@@ -25,8 +25,21 @@ const images = [
   }
 ];
 
-const imageAdd = document.createElement('img');
+const createImage = pictureInfo => {
+  return `
+    <li>
+    <img class=img_task_two src='${pictureInfo.url}' alt = '${pictureInfo.alt}'>
+    </img>
+    </li>
+    `;
+};
 
-document.gallery.append('img')
+const galleryImageTemplate = images.map(image => createImage(image)).join('');
+
+const galleryList = document.querySelector('.gallery');
+
+galleryList.insertAdjacentHTML('afterbegin', galleryImageTemplate);
+
+
 
 
