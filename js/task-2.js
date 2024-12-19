@@ -34,7 +34,7 @@ const createImage = pictureInfo => {
     `;
 };
 
-const galleryImageTemplate = images.map(image => createImage(image)).join('');
+const galleryImageTemplate = images.slice(0, 3).map(image => createImage(image)).join('');
 
 const galleryList = document.querySelector('.gallery');
 
